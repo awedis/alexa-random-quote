@@ -1,0 +1,51 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "قول عشوائي",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "RandomQuoteIntent",
+                    "slots": [],
+                    "samples": [
+                        "من فضلك أعطني قولاً",
+                        "أريد قولًا"
+                    ]
+                },
+                {
+                    "name": "CustomQuoteIntent",
+                    "slots": [
+                        {
+                            "name": "customQuote",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "أعطني مقولة {customQuote}",
+                        "أريد مقولة {customQuote}"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}

@@ -1,0 +1,47 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "random quote",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "RandomQuoteIntent",
+                    "slots": [],
+                    "samples": [
+                        "give me quote",
+                        "I want a quote"
+                    ]
+                },
+                {
+                    "name": "CustomQuoteIntent",
+                    "slots": [
+                        {
+                            "name": "customQuote",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "give me a {customQuote} quote",
+                        "I want a {customQuote} quote"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
